@@ -10,7 +10,7 @@ library(ggplot2)
 # setwd("V:/Forschung/Projekte/PallMeT Projekte_TSteigleder/06 EmpkinS/16 R/GUARDIANApp")
 # dataset_path <- "W:/palliativmedizin/science/GDN_Ph2-1_Messung auf Station/Auswertung/Probanden GDN1001_GDN1050/Auswertung/Herzschlag/HR_GDN1001_GDN1050_30sWin_30sStep_herztoene_v1.xlsx"
 
-dataset_path <- "data/HR_GDN1001_GDN1050_30sWin_30sStep_herztoene_v1.xlsx"
+dataset_path <- "data/HR_GDN1001_GDN1005_30sWin_30sStep_herztoene_v1.xlsx"
 
 patient_ids <- Filter(function(x) x != "Infos", excel_sheets(dataset_path))
 patient_data <- read_excel(dataset_path, sheet=2)
